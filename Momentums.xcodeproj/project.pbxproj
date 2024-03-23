@@ -14,6 +14,9 @@
 		5D1DC07C2BAF58E30006208D /* MomentumsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1DC07B2BAF58E30006208D /* MomentumsTests.swift */; };
 		5D1DC0862BAF58E30006208D /* MomentumsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1DC0852BAF58E30006208D /* MomentumsUITests.swift */; };
 		5D1DC0882BAF58E30006208D /* MomentumsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1DC0872BAF58E30006208D /* MomentumsUITestsLaunchTests.swift */; };
+		5D1DC0962BAF5ADE0006208D /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1DC0952BAF5ADE0006208D /* FontManager.swift */; };
+		5D1DC0982BAF5AF20006208D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1DC0972BAF5AF20006208D /* Colors.swift */; };
+		5D1DC0A52BAF5BB50006208D /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1DC0A42BAF5BB50006208D /* FeedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		5D1DC0812BAF58E30006208D /* MomentumsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MomentumsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D1DC0852BAF58E30006208D /* MomentumsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentumsUITests.swift; sourceTree = "<group>"; };
 		5D1DC0872BAF58E30006208D /* MomentumsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentumsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5D1DC0952BAF5ADE0006208D /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
+		5D1DC0972BAF5AF20006208D /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		5D1DC0A42BAF5BB50006208D /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,7 @@
 		5D1DC05E2BAF58E10006208D = {
 			isa = PBXGroup;
 			children = (
+				5D1DC0942BAF5AB90006208D /* Universals */,
 				5D1DC0692BAF58E10006208D /* Momentums */,
 				5D1DC07A2BAF58E30006208D /* MomentumsTests */,
 				5D1DC0842BAF58E30006208D /* MomentumsUITests */,
@@ -94,6 +101,9 @@
 		5D1DC0692BAF58E10006208D /* Momentums */ = {
 			isa = PBXGroup;
 			children = (
+				5D1DC09B2BAF5B180006208D /* Core */,
+				5D1DC09A2BAF5B110006208D /* Models */,
+				5D1DC0992BAF5B0B0006208D /* Services */,
 				5D1DC06A2BAF58E10006208D /* MomentumsApp.swift */,
 				5D1DC06C2BAF58E10006208D /* ContentView.swift */,
 				5D1DC06E2BAF58E20006208D /* Assets.xcassets */,
@@ -125,6 +135,101 @@
 				5D1DC0872BAF58E30006208D /* MomentumsUITestsLaunchTests.swift */,
 			);
 			path = MomentumsUITests;
+			sourceTree = "<group>";
+		};
+		5D1DC0942BAF5AB90006208D /* Universals */ = {
+			isa = PBXGroup;
+			children = (
+				5D1DC0952BAF5ADE0006208D /* FontManager.swift */,
+				5D1DC0972BAF5AF20006208D /* Colors.swift */,
+			);
+			path = Universals;
+			sourceTree = "<group>";
+		};
+		5D1DC0992BAF5B0B0006208D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5D1DC09A2BAF5B110006208D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5D1DC09B2BAF5B180006208D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5D1DC0A02BAF5B580006208D /* Components */,
+				5D1DC09F2BAF5B510006208D /* Feed */,
+				5D1DC09E2BAF5B4B0006208D /* MainTab */,
+				5D1DC09D2BAF5B430006208D /* Explore */,
+				5D1DC09C2BAF5B3D0006208D /* Profile */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		5D1DC09C2BAF5B3D0006208D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		5D1DC09D2BAF5B430006208D /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		5D1DC09E2BAF5B4B0006208D /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainTab;
+			sourceTree = "<group>";
+		};
+		5D1DC09F2BAF5B510006208D /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				5D1DC0A32BAF5B900006208D /* ViewModel */,
+				5D1DC0A22BAF5B820006208D /* Views */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		5D1DC0A02BAF5B580006208D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5D1DC0A12BAF5B630006208D /* Tweets */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5D1DC0A12BAF5B630006208D /* Tweets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tweets;
+			sourceTree = "<group>";
+		};
+		5D1DC0A22BAF5B820006208D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5D1DC0A42BAF5BB50006208D /* FeedView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5D1DC0A32BAF5B900006208D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +362,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D1DC0A52BAF5BB50006208D /* FeedView.swift in Sources */,
 				5D1DC06D2BAF58E10006208D /* ContentView.swift in Sources */,
+				5D1DC0982BAF5AF20006208D /* Colors.swift in Sources */,
+				5D1DC0962BAF5ADE0006208D /* FontManager.swift in Sources */,
 				5D1DC06B2BAF58E10006208D /* MomentumsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
